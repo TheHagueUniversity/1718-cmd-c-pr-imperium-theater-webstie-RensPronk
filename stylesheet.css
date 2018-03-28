@@ -4,12 +4,21 @@ body {
     background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: top center;
+	background-color:black;
 	font-family:Kozuka;
 }
 
 @font-face /* Het Font */ { 
     font-family: Kozuka;
     src: url('Font/Kozuka Gothic Pro L.ttf');
+}
+
+h1 {
+	margin:0px;
+	margin-left:10px;
+	padding:0px;
+	position:relative;
+	float:left;
 }
 
 
@@ -132,39 +141,68 @@ ul li:hover ul li {
 	z-index:-1;
 }
 
+.middencontainer /* De container van de elementen in het midden. */ {
+	height:90%;
+	width:90%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background-color:#330000;
+	position:relative;
+	color:white;
+	z-index:-1;
+}
+
+.slideshow  /* De slideshow boven aan. */{
+	width:100%;
+	height:auto;
+	margin-top:40px:
+}
+
 
 
 /* Footer */
 .footer {
-	height:64px;
 	width:1000px;
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
+    left: 50%;
+    transform: translate(-50%, 0) /* Hierdoor wordt de box in het midden weergeven. */ ;
 	background-color:#900000;
-	position:relative;
+	position:absolute;
+	height:auto;
 	color:white;
+	z-index:1;
+	margin:0px;
+	margin-top:40px;
+	padding:0px;
+
 }
 
-.logo {
+.logo  /* Het logo onderaan de pagina */{
 	position:relative;
+	float:right;
+	background-color:black;
 	height:64px;
-	float:right;
+	padding:0px;
 	margin:0px;
-	top:-80px;
+	padding:0px;
+
 
 }
 
-.socialmedia { 
+.socialmedia /* De social media onder aan de pagina*/{ 
 	position:relative;
 	float:right;
+	background-color:black;
+	height:64px;
 	margin:0px;
-	top:-78px;
+	padding:0px;
+
 }
 
 .socialmedia img /* Aparte styling voor de induviduele Social media iconen */ {
-	height:50px;
-	width:50px;
+	height:64px;
+	width:64px;
 	margin:0px;
 	padding:0px;
 }
