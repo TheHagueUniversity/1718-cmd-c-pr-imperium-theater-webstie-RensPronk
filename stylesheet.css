@@ -62,7 +62,9 @@ h1 {
 	margin:0px;
 	padding:0px;
 }
-
+#inloggen:hover{
+	background-color:#610000;
+}
 
 #navigatie {
 	height:50px;
@@ -142,15 +144,21 @@ ul li:hover ul li {
 }
 
 .middencontainer /* De container van de elementen in het midden. */ {
-	height:90%;
-	width:90%;
+	height:441px;
+	width:958px;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	background-color:#330000;
 	position:relative;
+	top:19px;
 	color:white;
 	z-index:-1;
+}
+
+.middenslide {
+	height:441px;
+	width:958px;
 }
 
 .slideshow  /* De slideshow boven aan. */{
@@ -159,6 +167,13 @@ ul li:hover ul li {
 	margin-top:40px:
 }
 
+.middenmenu {
+	background-color: red;
+	width:459px;
+	height:272px;
+	display:block;
+	position:relative;
+}
 
 
 /* Footer */
