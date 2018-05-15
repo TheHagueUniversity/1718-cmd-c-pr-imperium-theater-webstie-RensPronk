@@ -1,8 +1,9 @@
 <!DOCTYPE html>
+<!-- REVIEW: noem je homepagina altijd index.html -->
 <html>
 	<head>
 		<meta charset="utf-8">
-		<lang="nl">
+		<lang="nl"><!-- REVIEW: dit kan niet zo, en maakt je pagina's kapot in de browser.  -->
 		<title>Imperium Theater</title>
 		<link rel="shortcut icon" href="Image/favicon (1).ico" type="image/x-icon" /> <!-- Favicon logo. ( werkt nog niet op een of andere manier) -->
 		<link rel="icon" href="Image/favicon (1).ico" type="image/x-icon" />
@@ -13,7 +14,7 @@
 		<!-- Boven -->
 		<header>
 			<a href="Home.html"><img class="homelogo" src="image/u1037.png" alt="logo" ></a> <!-- Logo aan de top van de pagina -->
-			
+
 			<div id="inloggenBox"> <!-- De box zorgt ervoor dat hij gecentreerd blijft samen met de rest van de site. -->
 				<div id="inloggen"> <!-- De inlogknop zelf die binnen in de inlogbox zit. Hij staat aan de rechterkant van de box. -->
 				Inloggen
@@ -25,21 +26,21 @@
 			<nav id="navigatie">
 				<ul>
 					<li><a>Foto's</a>
-						<ul> 
+						<ul>
 							<li><a>Over iedereen die er niet is</a></li>
 							<li><a>Het zouthuis</a></li>
 							<li><a>Killer Joe</a></li>
 						</ul>
 					</li>
 					<li><a>Archief</a>
-						<ul> 
+						<ul>
 							<li><a>Over iedereen die er niet is</a></li>
 							<li><a>Het zouthuis</a></li>
 							<li><a>Killer Joe</a></li>
 						</ul>
 					</li>
 					<li><a href="Huurinfo.html">Huren</a>
-						<ul> 
+						<ul>
 							<li><a  href="Huurinfo.html">Huur Info</a></li>
 							<li><a  href="Faciliteiten.html">Faciliteiten</a></li>
 							<li><a  href="Beschikbaarheid.html">Beschikbaarheid</a></li>
@@ -47,13 +48,13 @@
 						</ul>
 					</li>
 					<li><a>Agenda</a>
-						<ul> 
+						<ul>
 							<li><a>Huidige show</a></li>
 							<li><a>Kaarten</a></li>
 						</ul>
 					</li>
 					<li><a>Ons Theater</a>
-						<ul> 
+						<ul>
 							<li><a>Over ons</a></li>
 							<li><a>Geschiedenis</a></li>
 							<li><a  href="Contact.html">Contact &amp; route</a></li>
@@ -63,33 +64,36 @@
 				</ul>
 			</nav>
 		</header>
-		
-	
+
+
 		<!-- Midden -->
-			<main class="midden"> 
+			<main class="midden">
 					<div class="middenslide"> <!-- De slideshow -->
+						<!-- REVIEW: dese div's zouden wat mij betreft allemaal sections zijn -->
 					<a><img class="slideshow" src="image/u978.jpg" alt="Slideshow"> </a>
 					</div>
 				<div class="middencontainer"> <!-- Het grid menu -->
-	
+
 					<div id="middenfoto1">
 					<a><img src="image/u1021.png"  alt="Huren"> </a>
 					<h3 class="menutekst1">Huren</h3>
 					<h3 class="menutekst12">Het Imperium theater is te huur!</h3>
-					</div>
-					
+					<!-- REVIEW: de 2e is elke keer geen h3 -->
+				</div>
+				<!-- REVIEW: moeten deze blokken niet clickable zijn? -->
+
 					<div id="middenfoto2">
 					<a><img src="image/u1020.png" alt="Lid worden"> </a>
 					<h3 class="menutekst2">Lid worden</h3>
 					<h3 class="menutekst22">Wordt lid van Theater Imperium!</h3>
 					</div>
-					
+
 					<div id="middenfoto3">
 					<a><img src="image/u1024.png" alt="Agenda"> </a>
 					<h3 class="menutekst3">Agenda</h3>
 					<h3 class="menutekst32">Bekijk hier de aankomende shows!</h3>
 					</div>
-					
+
 					<div id="middenfoto4">
 					<a><img src="image/u1027.png" alt="Social media"> </a>
 					<h3 class="menutekst4">Social media</h3>
@@ -97,8 +101,8 @@
 					</div>
 				</div>
 			</main>
-			
-			
+
+
 		<!-- Onder -->
 		<footer class="footer">
 			<h1>Imperium Theater</h1>

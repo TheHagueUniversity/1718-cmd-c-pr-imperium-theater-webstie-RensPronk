@@ -13,7 +13,7 @@
 		<!-- Boven -->
 		<header>
 			<a href="Home.html"><img class="homelogo" src="image/u1037.png" alt="logo" ></a> <!-- Logo aan de top van de pagina -->
-			
+
 			<div id="inloggenBox"> <!-- De box zorgt ervoor dat hij gecentreerd blijft samen met de rest van de site. -->
 				<div id="inloggen"> <!-- De inlogknop zelf die binnen in de inlogbox zit. Hij staat aan de rechterkant van de box. -->
 				Inloggen
@@ -25,21 +25,21 @@
 			<nav id="navigatie">
 				<ul>
 					<li><a>Foto's</a>
-						<ul> 
+						<ul>
 							<li><a>Over iedereen die er niet is</a></li>
 							<li><a>Het zouthuis</a></li>
 							<li><a>Killer Joe</a></li>
 						</ul>
 					</li>
 					<li><a>Archief</a>
-						<ul> 
+						<ul>
 							<li><a>Over iedereen die er niet is</a></li>
 							<li><a>Het zouthuis</a></li>
 							<li><a>Killer Joe</a></li>
 						</ul>
 					</li>
 					<li><a href="Huurinfo.html">Huren</a>
-						<ul> 
+						<ul>
 							<li><a  href="Huurinfo.html">Huur Info</a></li>
 							<li><a  href="Faciliteiten.html">Faciliteiten</a></li>
 							<li><a  href="Beschikbaarheid.html">Beschikbaarheid</a></li>
@@ -47,13 +47,13 @@
 						</ul>
 					</li>
 					<li><a>Agenda</a>
-						<ul> 
+						<ul>
 							<li><a>Huidige show</a></li>
 							<li><a>Kaarten</a></li>
 						</ul>
 					</li>
 					<li><a>Ons Theater</a>
-						<ul> 
+						<ul>
 							<li><a>Over ons</a></li>
 							<li><a>Geschiedenis</a></li>
 							<li><a  href="Contact.html">Contact &amp; route</a></li>
@@ -63,20 +63,20 @@
 				</ul>
 			</nav>
 		</header>
-		
-	
+
+
 		<!-- Midden -->
-			<main class="midden-huurformulier"> 
+			<main class="midden-huurformulier">
 			<h2 class="paginatitel">Huurformulier</h2>
 				<div class="tekst">
 				<p>
 				Hier onder bevind zich het formulier om de zaal aan te vragen. Vul uw gegevens in en laat duidelijk weten hoe je de zaal wilt hebben. Wij zullen zo snel mogelijk contact opnemen met u na het verzenden van uw aanvraag.
 				</p>
-				
+
 			<form action="Huurformulier.html" method="get"> <!-- Het formulier -->
 				<label>
 				Naam: *
-				<input type="text" name="naam" size="30" maxlength="100">
+				<input type="text" name="naam" size="30" maxlength="100"> <!-- REVIEW: size is styling en moet in CSS -->
 				</label><br />
 				<label>
 				<input type="radio" name="gender" value="Dhr" />
@@ -91,46 +91,46 @@
 				<input type="email" name="email" size="30" maxlength="30">
 				</label><br />
 				<label></label>
-				Telfoonnummer: 
-				<input type="text" name="telefoonnummer" size="30" maxlength="15">
+				Telfoonnummer:
+				<input type="text" name="telefoonnummer" size="30" maxlength="15"><!-- REVIEW: is dit het meest geschikte input type? -->
 				</label> <br />
 				<label>
 				Aanvraag: *<br />
-				<textarea rows="8" cols="40" id="aanvraag">
+				<textarea rows="8" cols="40" id="aanvraag"><!-- REVIEW: rows en cols is styling en moet in CSS -->
 				</textarea>
 				</label> <br />
 				Verplicht * <br />
-				<input type="submit" value="Aanvraag versturen" />	
+				<input type="submit" value="Aanvraag versturen" />
 			</form>
-			
-				
+
+
 				</div>
 				<div class="paginamenu">
-					<img class="paginafoto-huurformulier" src="image/u1349.png" alt="foto">
+					<img class="paginafoto-huurformulier" src="image/u1349.png" alt="foto"><!-- REVIEW: figure? -->
 						<div class="riekje">
 							Riekje Renes<br>
-							riekje@imperiumtheater.nl<br>
+							riekje@imperiumtheater.nl<br><!-- REVIEW: waarom is het emailadres niet clickable -->
 							071 5141035
 						</div>
 					<img class="menufoto1" src="image/u1021.png" alt="beschikbaarheid">
 						<a href="Home.html">
 						<div class="menufade1">Beschikbaarheid</div>
 						</a>
-						
+
 					<img class="menufoto2" src="image/u1236.png" alt="huurinfo">
 						<a href="huurinfo.html">
 						<div class="menufade2">Huurinfo</div>
 						</a>
-						
+
 					<img class="menufoto3" src="image/u1151.png" alt="faciliteiten">
 						<a href="faciliteiten.html">
 						<div class="menufade3">Faciliteiten</div>
 						</a>
-					
+
 				</div>
 			</main>
-			
-			
+
+
 		<!-- Onder -->
 		<footer class="footer-huurformulier">
 			<h1>Imperium Theater</h1>
