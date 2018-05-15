@@ -21,16 +21,25 @@ h1 {
 	float:left;
 }
 
+h2 {
+	margin:0px;
+	padding:0px;
+}
+
+img /* Elke foto heeft geen Padding of margin om mee te beginnen. */ {
+	padding:0px;
+	margin:0px;
+}
+
 
 /* Logo bovenaan de pagina */
 .homelogo { 
 	width:127px;
 	height:95px;
 	margin:0px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-
+	position:absolute;
+	left: 50%;
+	transform: translate(-50%, 0)
 }
 
 
@@ -62,14 +71,15 @@ h1 {
 	margin:0px;
 	padding:0px;
 }
-#inloggen:hover{
+#inloggen:hover /* Hij krijgt een andere kleur wanneer je er overheen gaat */{
 	background-color:#610000;
 }
 
-#navigatie {
+#navigatie /* De navigatiebalk bovenaan. */{
 	height:50px;
 	width:1000px;
 	display: block;
+	top:100px;
 	margin-left: auto;
 	margin-right: auto;
 	background-color:#900000;
@@ -82,14 +92,13 @@ h1 {
 
 
 
-/* Navigatie */
+
+
+/* De styling van de navigatiebalk boven aan. */
 ul {
-	
 	margin:0px;
 	padding:0px;
 	list-style:none;
-
-
 }
 
 ul li {
@@ -139,91 +148,456 @@ ul li:hover ul li {
 	margin-right: auto;
 	background-color:#330000;
 	position:relative;
+	top:120px;
+	color:white;
+	z-index:-1;
+}
+
+/* Niet elke pagina is even lang en daarom heeft elke pagina een ander midden.*/
+.midden-huurinfo {
+	height:800px;
+	width:1000px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background-color:#330000;
+	position:relative;
+	top:120px;
+	color:white;
+	z-index:-1;
+}
+
+.midden-huurformulier{
+	height:900px;
+	width:1000px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background-color:#330000;
+	position:relative;
+	top:120px;
+	color:white;
+	z-index:-1;
+}
+
+.midden-faciliteiten{
+	height:5600px;
+	width:1000px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background-color:#330000;
+	position:relative;
+	top:120px;
+	color:white;
+	z-index:-1;
+}
+
+.midden-contact{
+	height:1000px;
+	width:1000px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background-color:#330000;
+	position:relative;
+	top:120px;
 	color:white;
 	z-index:-1;
 }
 
 .middencontainer /* De container van de elementen in het midden. */ {
-  display: grid;
-  background-color: #2196F3;
-  padding: 10px;
-  position:relative;
-  height:1144px;
+	display: grid;
+	margin:0px;
+	padding:0px;
+	position:relative;
+	height:612px;
+	width:1000px;
+	top:55px;
 
-  
-  grid-template-columns: 20px 459px 20px 459px 20px;
-  grid-template-rows: 20px 272px 20px 272px 20px;
+	/* De foto's staan in een grid structuur die hier wordt gemaakt */
+	grid-template-columns: 21px 459px 40px 459px 21px; /* geeft aan hoeveel colums er zijn en hoe groot ze zijn. */
+	grid-template-rows: 23px 272px 30px 272px 23px; /* Geeft aan hoeveel rows er zijn en hoe groot ze zijn. */
 }
 
-#middenfoto1 {
-  background-color: green;
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  font-size: 30px;
-  text-align: center;
-  height:272px;
-  width:459px;
-  
-  grid-column-start: 2;
-  grid-column-end: span col4-start;
-  grid-row-start: 2;
+.middencontainer img /* De foto's in de container */{
+	height:228px;
+	width:100%;
+}
 
+
+/* De foto's in een grid onder aan de homepage heten "middenfoto" */
+#middenfoto1 {
+	background-color: #610000;
+	border: 1px solid rgba(0, 0, 0, 0.8);
+	font-size: 30px;
+	text-align: center;
+	height:272px;
+	width:459px;
+	text-align:left;
+ 
+	/* 	Geeft weer waar de foto in de grid moet staan en waar die eindigt. */
+	grid-column-start: 2;
+	grid-column-end: span col4-start;
+	grid-row-start: 2;
+
+}
+
+	/* De tekst die onder de foto's staat in de grid heten "menutekst" */
+.menutekst1 {
+	text-align:left;
+	font-size:22px;
+	background-color:#610000;
+	position:absolute;
+    top:218px;
+    padding-bottom:0px;
+    padding-left:61px;
+    padding-right:62px;
+    padding-top:0px;
+    left:21px;
+    height:45px;
+    margin-top:34px;
+	box-shadow:0px 0px 0px 1px black inset /* Dit zorgt ervoor dat er een border om de balk heen zit maar dan aan de binnenkant. Zodat het de box niet vergroot */;
+}
+
+	/* 	Het tweede stukje tekst onder de foto's in de grid heten ook "menutekst" maar dan met een extra getal er achter. */
+.menutekst12 {
+	text-align:left;
+	font-size:16px;
+	background-color:#610000;
+	position:absolute;
+	top:218px;
+    padding:0px;
+    padding-bottom:0px;
+    padding-left:19px;
+    padding-right:0px;
+    padding-top:7px;
+    left:203px;
+    height:38px;
+	width:259px;
+	margin-top:34px;
+	box-shadow:0px 0px 0px 1px black inset /* Dit zorgt ervoor dat er een border om de balk heen zit maar dan aan de binnenkant. Zodat het de box niet vergroot */;
 }
 
 #middenfoto2 {
-  background-color: yellow;
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  font-size: 30px;
-  text-align: center;
-  height:272px;
-  width:459px;
+	background-color: #610000;
+	border: 1px solid rgba(0, 0, 0, 0.8);
+	font-size: 30px;
+	text-align: center;
+	height:272px;
+	width:459px;
   
-  grid-column-start: 4;
-  grid-column-end: span col4-start;
-  grid-row-start: 2;
+	grid-column-start: 4;
+	grid-column-end: span col4-start;
+	grid-row-start: 2;
 
+}
+
+.menutekst2 {
+	text-align:left;
+	font-size: 22px;
+    background-color: #610000;
+    position: absolute;
+    top: 218px;
+    padding-bottom: 0px;
+    padding-left: 36px;
+    padding-right: 37px;
+    padding-top: 0px;
+    left: 520px;
+    height: 45px;
+    margin-top: 34px;
+	box-shadow:0px 0px 0px 1px black inset /* Dit zorgt ervoor dat er een border om de balk heen zit maar dan aan de binnenkant. Zodat het de box niet vergroot */;
+}
+
+.menutekst22 {
+	text-align:left;
+	font-size:16px;
+	background-color:#610000;
+	position:absolute;
+	top:218px;
+    padding:0px;
+    padding-bottom:0px;
+    padding-left:19px;
+    padding-right:0px;
+    padding-top:7px;
+    left:702px;
+    height:38px;
+	width:259px;
+	margin-top:34px;
+	box-shadow:0px 0px 0px 1px black inset /* Dit zorgt ervoor dat er een border om de balk heen zit maar dan aan de binnenkant. Zodat het de box niet vergroot */;
 }
 
 #middenfoto3 {
-  background-color: orange;
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  font-size: 30px;
-  text-align: center;
-  height:272px;
-  width:459px;
+	background-color: #610000;
+	border: 1px solid rgba(0, 0, 0, 0.8);
+	font-size: 30px;
+	text-align: center;
+	height:272px;
+	width:459px;
   
-  grid-column-start: 2;
-  grid-column-end: span col4-start;
-  grid-row-start: 4;
+	grid-column-start: 2;
+	grid-column-end: span col4-start;
+	grid-row-start: 4;
 }
 
+.menutekst3 {
+	text-align:left;
+	font-size:22px;
+	background-color:#610000;
+	position:absolute;
+	top:520px;
+    padding-bottom: 0px;
+    padding-left: 53px;
+    padding-right: 53px;
+    padding-top: 0px;
+    left: 21px;
+    height: 45px;
+    margin-top: 34px;
+	box-shadow:0px 0px 0px 1px black inset /* Dit zorgt ervoor dat er een border om de balk heen zit maar dan aan de binnenkant. Zodat het de box niet vergroot */;
+}
+
+.menutekst32 {
+	text-align:left;
+	font-size:16px;
+	background-color:#610000;
+	position:absolute;
+	top:520px;
+    padding:0px;
+    padding-bottom:0px;
+    padding-left:19px;
+    padding-right:0px;
+    padding-top:7px;
+    left:203px;
+    height:38px;
+	width:259px;
+	margin-top:34px;
+	box-shadow:0px 0px 0px 1px black inset /* Dit zorgt ervoor dat er een border om de balk heen zit maar dan aan de binnenkant. Zodat het de box niet vergroot */;
+}
 #middenfoto4 {
-  background-color: red;
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  font-size: 30px;
-  text-align: center;
-  height:272px;
-  width:459px;
+	background-color: #610000;
+	border: 1px solid rgba(0, 0, 0, 0.8);
+	font-size: 30px;
+	text-align: center;
+	height:272px;
+	width:459px;
   
-  grid-column-start: 4;
-  grid-column-end: span col4-start;
-  grid-row-start: 4;
+	grid-column-start: 4;
+	grid-column-end: span col4-start;
+	grid-row-start: 4;
 
 }
 
+.menutekst4 {
+	text-align:left;
+	font-size:22px;
+	background-color:#610000;
+	position:absolute;
+	top:520px;
+	padding-bottom: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 0px;
+    left: 520px;
+    height: 45px;
+    margin-top: 34px;
+	box-shadow:0px 0px 0px 1px black inset /* Dit zorgt ervoor dat er een border om de balk heen zit maar dan aan de binnenkant. Zodat het de box niet vergroot */;
+}
+
+.menutekst42 {
+	text-align:left;
+	font-size:16px;
+	background-color:#610000;
+	position:absolute;
+	top:520px;
+    padding:0px;
+    padding-bottom:0px;
+    padding-left:19px;
+    padding-right:0px;
+    padding-top:7px;
+    left:702px;
+    height:38px;
+	width:259px;
+	margin-top:34px;
+	box-shadow:0px 0px 0px 1px black inset /* Dit zorgt ervoor dat er een border om de balk heen zit maar dan aan de binnenkant. Zodat het de box niet vergroot */;
+}
+
+/* 	De slideshow boven aan de homepage (werkt alleen niet) */
 .middenslide {
 	height:441px;
+	width:1000px;
+	position:relative;
+	padding-left:21px;
+	padding-right:21px;
+	padding-top:21px;
+	
+}
+
+/* De foto van de slideshow bovenaan. */
+.slideshow  {
+	height:auto;
 	width:958px;
 }
 
-.slideshow  /* De slideshow boven aan. */{
-	width:100%;
-	height:auto;
-	margin-top:40px:
+/* De paginatitel boven aan elke pagina */
+.paginatitel {
+    margin-left: 60px;
+    margin-top: -21px;
+	font-size:72px;
+}
+
+/* De tekst bij elke pagina. */
+.tekst  {
+	width: 514px;
+	float:left;
+	margin-left: 40px;
+	line-height: 36px;
+	margin-top:-43px;
 
 }
 
+/* Het menu tussen de huur pagina's. */
+.paginamenu {
+	height:669px;
+	width:381px;
+	float:right;
+	margin-right:19px;
+	padding:0px;
+	position:  relative;
+	top:-190px;
+}
+
+/* De foto die boven het menu staat op elke huur pagina. */
+.paginafoto {
+	width:381px;
+	height:250px;
+	margin:0px;
+	padding:0px;
+	margin-top:40px;
+}
+
+/* Een apart formaat voor de paginafoto van Huurformulier. */
+.paginafoto-huurformulier {
+	width:260px;
+	height:260px;
+	margin:0px;
+	padding:0px;
+	margin-left:58px;
+	margin-top:40px;
+}
+
+/*  De tekst onder de foto van Riekje op Huurformulier*/
+.riekje {
+	text-align:center;
+}
+
+/* De tekst onder de foto van  Riekje op Beschikbaarheid */
+.riekje2 {
+	float:right;
+	margin-right:140px;
+}
+
+/* De foto van Riekje */
+.riekjefoto {
+	width:200px;
+	height:200px;
+	float:right;
+}
 
 
+/* De Foto's in het menu van de huurpagina's heten "menufoto" */
+.menufoto1 {
+	height:117px;
+	width:381px;
+	margin:0px;
+	padding:0px;
+    margin-top:33px;
+}
+
+/* De rode laag die over de menufoto's heen zit op de huurpaginas  */
+.menufade1 {
+	background-color: rgba(97,0,0,0.5);
+    height: 60px;
+    width: 265px;
+    position: absolute;
+    margin: 0px;
+    padding: 28px;
+    padding-left: 88px;
+    margin-top: -127px;
+    font-size: 28px;
+}
+
+.menufoto2 {
+	height:117px;
+	width:381px;
+	margin:0px;
+	padding:0px;
+
+}
+
+.menufade2 {
+	background-color: rgba(97,0,0,0.5);
+    height: 60px;
+    width: 232px;
+    position: absolute;
+    margin: 0px;
+    padding: 28px;
+    padding-left: 121px;
+    margin-top: -127px;
+    font-size: 28px;
+}
+
+.menufoto3 {
+	height:117px;
+	width:381px;
+	margin:0px;
+	padding:0px;
+}
+
+.menufade3 {
+	background-color: rgba(97,0,0,0.5);
+	height: 60px;
+    width: 252px;
+    position: absolute;
+    margin: 0px;
+    padding: 28px;
+    padding-left: 101px;
+    margin-top: -127px;
+    font-size: 28px;
+}
+
+/* De foto's van het geluid op de faciliteiten pagina heten "geluidfoto" */
+.geluidfoto1 {
+	width:381px;
+	height:250px;
+	position:relative;
+	top:150px;
+}
+
+.geluidfoto2 {
+	width:381px;
+	height:250px;
+	position:relative;
+	top:150px;
+}
+
+/* De foto's van het lampen op de faciliteiten pagina heten "lampenfoto" */
+.lampenfoto1 {
+	width:381px;
+	height:250px;
+	position:relative;
+	top:1160px;
+}
+
+/* Het iFrame wat op de contact pagina zit. */
+iframe {
+	width:850px;
+	height:600px;
+	top:30px;
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+	display: block;
+}
 
 /* Footer */
 .footer {
@@ -233,6 +607,76 @@ ul li:hover ul li {
     transform: translate(-50%, 0) /* Hierdoor wordt de box in het midden weergeven. */ ;
 	background-color:#900000;
 	position:absolute;
+	top:1322px;
+	height:auto;
+	color:white;
+	z-index:1;
+	margin:0px;
+	margin-top:40px;
+	padding:0px;
+
+}
+
+/* De locatie van de footer is op elke pagina anders omdat de pagina niet altijd even lang is. Daarom heeft elke pagina een andere footer. */
+.footer-huurinfo {
+	width:1000px;
+	display: block;
+    left: 50%;
+    transform: translate(-50%, 0) /* Hierdoor wordt de box in het midden weergeven. */ ;
+	background-color:#900000;
+	position:absolute;
+	top:960px;
+	height:auto;
+	color:white;
+	z-index:1;
+	margin:0px;
+	margin-top:40px;
+	padding:0px;
+
+}
+
+.footer-huurformulier {
+	width:1000px;
+	display: block;
+    left: 50%;
+    transform: translate(-50%, 0) /* Hierdoor wordt de box in het midden weergeven. */ ;
+	background-color:#900000;
+	position:absolute;
+	top:1060px;
+	height:auto;
+	color:white;
+	z-index:1;
+	margin:0px;
+	margin-top:40px;
+	padding:0px;
+
+}
+
+.footer-faciliteiten {
+	width:1000px;
+	display: block;
+    left: 50%;
+    transform: translate(-50%, 0) /* Hierdoor wordt de box in het midden weergeven. */ ;
+	background-color:#900000;
+	position:absolute;
+	top:5760px;
+	height:auto;
+	color:white;
+	z-index:1;
+	margin:0px;
+	margin-top:40px;
+	padding:0px;
+
+}
+
+.footer-contact {
+	width:1000px;
+	display: block;
+    left: 50%;
+    transform: translate(-50%, 0) /* Hierdoor wordt de box in het midden weergeven. */ ;
+	background-color:#900000;
+	position:absolute;
+	top:1160px;
 	height:auto;
 	color:white;
 	z-index:1;
@@ -250,8 +694,6 @@ ul li:hover ul li {
 	padding:0px;
 	margin:0px;
 	padding:0px;
-
-
 }
 
 .socialmedia /* De social media onder aan de pagina*/{ 
@@ -269,6 +711,60 @@ ul li:hover ul li {
 	width:64px;
 	margin:0px;
 	padding:0px;
+}
+
+
+
+/* De agenda op de beschikbaarheid pagina. */
+ table {
+   border: 1px solid #999;
+   border-collapse: collapse;
+   background-color:#900000
+}
+   
+th {
+   border: 1px solid #999;
+   font-size: 70%;
+   text-transform: uppercase;
+}
+   
+td {
+   border: 1px solid #999;
+   height: 40px;
+   width:50px;
+   padding: 10px;
+   vertical-align: top;
+}
+   
+   /* De tekst boven de tabel. */
+caption {
+   font-size: 200%;
+   
+}
+
+/* De dagen in de kalender. */
+.day {
+   text-align: right;
+}
+   
+   
+	/* Wanneer je er over heen gaat met je muis verandert het van kleur. */
+td:hover, th:hover{
+	background-color:#710000;
+}
+
+/* De tekstvelden in het formulier op de huurformulier pagina met het type text. */
+input[type=text] {
+	margin-right: 110px;
+    margin-top: 8px;
+	float: right;
+}
+
+/* De tekstvelden in het formulier op de huurformulier pagina met het type emeil. */
+input[type=email] {
+	margin-right: 110px;
+    margin-top: 8px;
+    float: right;
 }
 
 
